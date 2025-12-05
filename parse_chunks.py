@@ -13,7 +13,7 @@ def parse_chunk(document: Union[str, bytes], file_name: str = "Insurance") -> st
     text = extract_text(document)
     chunks = chunk_text(text)
 
-    json_chunks = []
+    json_chunks = [] #new chunking method
     for i, item in enumerate(chunks):
         json_chunks.append(
             {
